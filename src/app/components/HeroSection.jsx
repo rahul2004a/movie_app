@@ -11,13 +11,13 @@ const mulish = Mulish({
 })
 
 
-const HeroSection = () => {
+const HeroSection = ({ title, imageurl }) => {
     return (
         <main className={heroStyles.main_section}>
             <div className={styles.container}>
                 <div className={styles.grid_two_section}>
                     <div className={heroStyles.hero_content}>
-                        <h1>Lets Watch Movie Together</h1>
+                        <h1>{title}</h1>
                         <p> From award-winning dramas to blockbuster action movies, we&apos;ve got you covered. Browse
                             our
                             selection of the latest and greatest movies, and find your new favorite today.
@@ -29,7 +29,7 @@ const HeroSection = () => {
                         </Link>
                     </div>
                     <div className={heroStyles.hero_image}>
-                        <Image src="/about1.svg" alt="watching netflix" width={500} height={500} />
+                        <Image src={imageurl} alt="watching netflix" width={500} height={500} />
                     </div>
                 </div>
             </div>

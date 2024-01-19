@@ -1,9 +1,10 @@
 import React from 'react'
+import HeroSection from '../components/HeroSection'
 
-const page = () => {
+const About = () => {
     return (
-        <div>page</div>
+        <HeroSection title="OUR STORY" imageurl="/about1.svg" />
     )
 }
 
-export default page
+export default About
